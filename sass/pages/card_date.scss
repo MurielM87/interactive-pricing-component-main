@@ -1,0 +1,35 @@
+#card_date {
+  @include flex-center-row;
+  margin-top: 20px;
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    @include flex-center-column;
+  }
+    
+  .monthly {
+    margin-right: 10px;
+    color: $grayish_blue;
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+      font-size: 10px;
+    }
+  }
+  .yearly {
+    margin-left: 10px;
+    color: $grayish_blue;
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+      font-size: 10px;
+    }
+  }
+  
+
+  #discount {
+    font-size: 11px;
+    color: $light_red;
+    background-color: $light_grayish_red;
+    padding: 3px;
+    border-radius: 10px;
+    margin-left: 10px;
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+      font-size: 10px;
+    }
+  }
+}

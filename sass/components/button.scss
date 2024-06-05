@@ -1,0 +1,15 @@
+button {
+    padding: 11px 50px;
+    border-radius: 20px;
+    color: $pale_blue;
+    background-color: $dark_desatured_blue;
+    margin-top: 20px;
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+        margin: 20px;
+    }
+
+    &:hover {
+        color: $white;
+        cursor: pointer;
+    }
+}

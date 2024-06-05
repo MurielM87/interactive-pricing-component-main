@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    position: relative;
+    background-color: $very_pale_blue;
+
+    .container {
+        width: 1460px;
+        @media screen and (max-width: map-get($breakpoints, mobile)) {
+            width: 100%;
+        }
+    }
+    #background_img {
+        position: absolute;
+        z-index: -1;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #pattern-circles {
+        position: absolute;
+        z-index: -1;
+        margin-left: 40%;
+        margin-top: 20px;
+    }
+}
